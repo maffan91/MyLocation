@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.affan.mylocation.MainActivity">
+
+
+    <TextView
+        tools:text="24.1223"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/lat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        tools:text="67.5322"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lat"
+        android:layout_alignLeft="@+id/lat"
+        android:layout_alignStart="@+id/lat"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lng" />
+
+    <Button
+        android:text="Get Location"
+        android:onClick="getMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/button2"
+        android:layout_below="@+id/lng"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
